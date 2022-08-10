@@ -1,0 +1,23 @@
+//C program to read a number 'n'.Read x ,y values and replace "x" value with "y" value
+#include<stdio.h>
+int main() 
+{
+   int x,y,res=0,r,n,d=1;  /*x=value to be replaced and y new value */
+   printf("Enter a number: ");
+   scanf("%d",&n);
+   printf("Enter value to be replaced:");
+   scanf("%d",&x);
+  printf("enter the replace value:");
+  scanf("%d",&y);
+  while(n>0)
+  {
+      r=n%10;
+      if(r==x)
+       res=res+y*d;
+    else
+      res=res+r*d;
+      d=d*10;
+      n=n/10;
+  }
+ printf("%d",res);
+ }
