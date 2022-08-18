@@ -1,0 +1,15 @@
+// c program to print missing number in the array 
+#include <stdio.h>
+#include<math.h>
+int main() 
+{
+     int a[100],i, total,n;
+     scanf("%d\n",&n);
+      total = (n ) * (n + 1) / 2;
+      for(i=0;i<n-1;i++)
+     scanf("%d",&a[i]);
+      for (i = 0; i < n; i++)
+          total -= a[i];
+               printf("%d",total);
+           return 0;
+}
