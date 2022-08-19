@@ -1,0 +1,21 @@
+/*c program to find out sum of factorial values of all elements of array.*/
+#include<stdio.h>
+int main()
+{
+   int a[]={5,6,7};
+	int len=sizeof(a)/sizeof(int);
+	int i, j=1,sum=0, f=1;
+	
+	for(i=0;i<len;i++) 
+	{
+	  while(j<=a[i])
+	  {
+	     f=f*j;
+	     j++;
+	  }
+	        sum+=f;
+	}
+	
+	printf("\Sum of Factorial values = %d",sum);
+	return 0;
+}
