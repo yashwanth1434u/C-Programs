@@ -1,0 +1,21 @@
+//count number of words in string
+#include <stdio.h>
+int main() 
+  {
+     char str[20];
+     int i,count=1;
+     gets(str);
+      for(i=0;str[i]!='\0';i++)
+    {
+         if(str[i]==' ')
+         {
+          count++;
+          }
+     }
+       printf("%d",count);
+       return 0;
+}
+
+/*Output:
+  I love India
+  No.of words=3 */
